@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs += ['src', 'src_j2se', 'src_compiler', 'src_win']
+        }
+        resources {
+            srcDirs += ['res']
+        }
+    }
+}
+
+mainClassName = "jdos.gui.MainFrame"

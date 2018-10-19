@@ -2,6 +2,7 @@ package jdos.win;
 
 import jdos.Dosbox;
 import jdos.cpu.CPU;
+import jdos.cpu.CPU_Regs;
 import jdos.cpu.Paging;
 import jdos.dos.Dos_files;
 import jdos.dos.Dos_programs;
